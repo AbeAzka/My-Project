@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Data Siswa</h1>
+    <div class="container">
+        <label>Nama: </label>
+        <input type="text" id="nama" placeholder="Nama Siswa">
+
+        <label>Kelas: </label>
+        <input type="text" id="kelas" placeholder="Kelas Siswa">
+
+        <label>Umur: </label>
+        <input type="number" id="umur" placeholder="Umur Siswa">
+    
+        <button onclick="TambahSiswa()">Tambah Siswa</button>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Umur</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="TabelSiswa">
+            </tbody>
+        </table>
+
+        <button class="hapus-semua" onclick="hapusSemua()">Hapus Semua Data</button>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

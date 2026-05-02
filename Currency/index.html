@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>Currency Converter</header>
+        <hr>
+        <form>
+            <div class="amount">
+                <p>Masukkan Jumlah:</p>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>Dari:</p>
+                    <select id="fromCurrency">
+                       
+                    </select>
+                </div>
+                <div class="to">
+                    <p>Ke:</p>
+                    <select id="toCurrency">
+                       
+                    </select>
+                </div>
+
+                
+            </div>
+            <button type="button" id="calcBtn">Hitung</button>
+            
+            <div class="exchange-rate">
+                Kurs: <span id="exchangeRate">-</span>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

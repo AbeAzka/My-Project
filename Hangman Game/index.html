@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 >Hangman game</h1>
+        <p id="petunjuk">Tebak kata berikut ini:</p>
+        <div id="kata"></div>
+        <div id="huruf"></div>
+        <p id="kategori"></p>
+        <canvas id="canvas" width="200" height="200"></canvas>
+    
+        <p id="live">Kesempatan: 6</p>
+        <p id="hasil"></p>
+        <button onclick="startGame()">Main Lagi</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

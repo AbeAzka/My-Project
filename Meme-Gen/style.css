@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #a4dbff;
+    color: #333;
+    text-align: center;
+}
+
+h1{
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+}
+
+form{
+    background-color: aquamarine;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px darkslategray;
+}
+
+#topText, #bottomText{
+    padding: 8px;
+    margin: 10px;
+}
+
+#imageInput{
+    margin: 15px 0;
+    text-align: center;
+}
+
+canvas{
+    background-color: lightgoldenrodyellow;
+    border: 1px solid darkslategray;
+    padding: 10px;
+    border-radius: 10px;    
+    box-shadow: 3px 3px 3px darkslategray;
+    margin-bottom: 35px;
+    
+}
+
+button{
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgreen;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px darkslategray;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(81, 136, 81);
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+label{
+    margin-right: 20px;
+}

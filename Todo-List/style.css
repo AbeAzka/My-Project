@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya2xhcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=2800&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 50%;
+    max-width: 400px;
+    border: 2px solid black;
+    background-color: rgb(195, 195, 241);
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container:hover{
+    transform: scale(1.1);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.input-button{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+input{
+    width: 68%;
+    height: 30px;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+input:focus{
+    background-color: rgb(209, 169, 255);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(97, 97, 241);
+}
+
+button{
+    width: 32%;
+    height: 30px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: rgb(97, 97, 241);
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(119, 0, 255);
+}
+button:active{
+    transform: scale(0.9);
+}
+
+ul{
+    list-style: none; 
+    overflow: auto;
+    max-height: 300px;
+}
+
+li{
+    background: rgb(181, 214, 214);
+    justify-content: space-between;
+    margin-bottom: 10px;
+	border-radius: 8px;
+	padding: 10px 15px;
+	justify-content: flex;
+	display: flex;
+	align-items: center;
+}
+
+li span {
+    flex: 1; 
+    text-align: left;
+}
