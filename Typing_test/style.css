@@ -53,6 +53,33 @@ textarea{
     border: 1px solid #ccc;
 }
 
+textarea:focus{
+    outline: none;
+    border-color: #007BFF;
+}
+
 .info {
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+button:active{
+    background-color: #004080;
+    transform: scale(0.97);
 }
