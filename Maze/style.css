@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://t3.ftcdn.net/jpg/09/73/04/40/360_F_973044085_9JiAfj388TH152idND4MtIY74xBnoQJl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.centered-text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-size: large;
+    color: darkgreen
+}
+
+.centered{
+    display: block;
+    margin: 0 auto;
+}
+
+.game-heading{
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+}
+
+#timerEl{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 15%;
+    margin: 0 auto;
+    background-color: white;
+}

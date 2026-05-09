@@ -27,4 +27,74 @@ const timeEl = document.getElementById("time");
 const wpmEl = document.getElementById("wpm");
 
 let startTime;
-let timeInterval;
+let timerInterval;
+
+function getRandomQuote() {
+  return quotes[Math.floor(Math.random() * quotes.length)];
+}
+
+function renderQuote() {
+    const quote = getRandomQuote();
+    quoteEl.innerHTML = "";
+
+    quote.split("").forEach(char => {
+      const span = document.createElement("span");
+      span.innerText = char;
+      quoteEl.appendChild(span);
+    });
+}
+    
+function startTimer() {
+    startTime = new Date();
+    timerInterval = setInterval(() => {
+      const currentTime = Math.floor((new Date() - startTime) / 1000);
+      timeEl.innerText = currentTime;
+    }, 1000);
+}
+
+function startGame(){
+    renderQuote();
+    inputEl.value = "";
+    timeEl.innerText = "0";
+    wpmEl.innerText = "0";
+    clearInterval(timerInterval);
+    startTimer();
+}
+
+function calculateWPM() {
+    const time = (new Date() - startTime) / 60000; // menit
+    const words = inputEl.value.length / 5;
+    console.log(`Time: ${time} minutes, Words: ${words}`);
+    return Math.round(words / time);
+}
+
+
+inputEl.addEventListener("input", () => {
+    const quoteSpans = quoteEl.querySelectorAll("span");
+    const inputText = inputEl.value.split("");
+
+    let correct = true;
+
+    quoteSpans.forEach((span, index) => {
+      const char = inputText[index];
+
+      if (char == null) {
+        span.classList.remove("correct", "incorrect");
+        correct = false;
+      } else if (char === span.innerText) {
+        span.classList.add("correct");
+        span.classList.remove("incorrect");
+      } else {
+        span.classList.add("incorrect");
+        span.classList.remove("correct");
+        correct = false;
+      }
+    });
+    wpmEl.innerText = calculateWPM();
+    if (correct) {
+      clearInterval(timerInterval);
+      
+    }
+});
+
+startGame();

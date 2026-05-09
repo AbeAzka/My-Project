@@ -35,11 +35,11 @@ body{
     font-weight: 400;
 }
 
-.quote span .correct{
+.quote span.correct{
     color: lightgreen;
 }
 
-.quote span .incorrect{
+.quote span.incorrect{
     color: red;
     text-decoration: underline;
 }
