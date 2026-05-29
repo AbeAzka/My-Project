@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+}
+
+#display-container{
+    width: 90%;
+    max-width: 700px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+    background: lightgoldenrodyellow;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header{
+    margin-bottom: 30px;
+}
+
+.header h2{
+    font-size: 28px;
+    color: #333;
+}
+
+.timer{
+    font-size: 18px;
+    color: #333;
+    background-color: antiquewhite;
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+.question-area{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question-text{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+#rgb-value{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer{
+    margin-top: 30px;
+
+}
+
+#next-button, #start-button, #restart{
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#next-button:hover, #start-button:hover, #restart:hover{
+    background-color: #0056b3;
+}
+
+#next-button:active, #start-button:active, #restart:active{
+    transform: scale(0.9);
+}
+
+.start-screen, .score-container{
+    position: absolute;
+    inset: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(9,57,43,0.8);
+    opacity: rgba(0, 0, 0, 0.8);
+}
+
+.start-screen h1, .score-container h1{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+#user-score{
+    font-size: 24px;
+    color: #fff;
+}
