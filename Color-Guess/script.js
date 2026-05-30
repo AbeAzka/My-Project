@@ -27,7 +27,6 @@ function randomColor() {
   return `rgb(${r}, ${g}, ${b})`;
 }
 
-
 function startTimer() {
   clearInterval(timer);
 
@@ -56,3 +55,96 @@ function disableOptions() {
     }
   });
 }
+
+function createQuestion() {
+  container.innerHTML = "";
+
+  startTimer();
+
+  let colors = [];
+
+  for (let i = 0; i < 4; i++) {
+    colors.push(randomColor());
+  }
+
+  correctColor = colors[Math.floor(Math.random() * 4)];
+
+  rgbValue.innerText = correctColor.toUpperCase();
+
+  colors = shuffleArray(colors);
+
+  colors.forEach((color) => {
+    let button = document.createElement("button");
+
+    button.classList.add("option-div");
+
+    button.style.backgroundColor = color;
+
+    button.addEventListener("click", () => checkAnswer(button, color));
+
+    container.appendChild(button);
+  });
+
+  questionNumber.innerText = currentQuestion;
+}
+
+function checkAnswer(button, color) {
+  clearInterval(timer);
+
+  let options = document.querySelectorAll(".option-div");
+
+  options.forEach((btn) => (btn.disabled = true));
+
+  if (color === correctColor) {
+    button.classList.add("correct");
+    score++;
+  } else {
+    button.classList.add("incorrect");
+
+    options.forEach((btn) => {
+      if (btn.style.backgroundColor === correctColor) {
+        btn.classList.add("correct");
+      }
+    });
+  }
+}
+
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
+nextButton.addEventListener("click", () => {
+  currentQuestion++;
+
+  if (currentQuestion > totalQuestions) {
+    endGame();
+  } else {
+    createQuestion();
+  }
+});
+
+function endGame() {
+  scoreContainer.classList.remove("hide");
+
+  userScore.innerHTML = `
+    Your Score: <b>${score}</b> / ${totalQuestions}
+  `;
+}
+
+startButton.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+
+  score = 0;
+  currentQuestion = 1;
+
+  createQuestion();
+});
+
+restartButton.addEventListener("click", () => {
+  scoreContainer.classList.add("hide");
+
+  score = 0;
+  currentQuestion = 1;
+
+  createQuestion();
+});
