@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://images.pexels.com/photos/5412226/pexels-photo-5412226.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container{
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background-color: lightcyan;
+    width: 320px;
+    padding: 24px;
+    text-align: center;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.subtitle{
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+}
+
+#score{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+input:focus{
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.restart-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff95;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+button:active{
+    transform: scale(0.95);
+    background-color: #004080;
+}
+
+.restart-btn:hover{
+    transform: scale(1.05);
+    background-color: #00c0a0;
+}
+
+.restart-btn:active{
+    transform: scale(0.95);
+    background-color: #008060;
+}
+
+.result{
+    margin-top: 20px;
+    color: #333;    
+}
+
+#hint{
+    font-size: 14px;
+    font-weight: 400;
+}

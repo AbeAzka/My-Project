@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Guess The Number</h2>
+        <p class="subtitle">Pick a number beetween 1 - 100</p>
+        <p id="score">Score: 0</p>
+        <p id="attempts">Kesempatan: 6</p>
+
+        <div class="input-group">
+            <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+            <button id="check-btn">Guess</button>
+        </div>
+
+        <button id="restart" class="restart-btn">Restart</button>
+
+        <div class="result">
+            <p id="hint"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
