@@ -4,9 +4,11 @@
 
 <h2>List of all projects</h2>
 <li>CarRace</li>
+<li>Color-Guess</li>
 <li>Countdown</li>
 <li>Currency</li>
 <li>Data Siswa</li>
+<li>Guess-Number</li>
 <li>Hangman Game</li>
 <li>Meme-Gen</li>
 <li>Password-Generator</li>
