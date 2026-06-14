@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakulator Tip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Tip</h1>
+        <form>
+            <div class="input-group">
+                <input id="jumlahTagihan" min="1" type="number" placeholder="Masukkan jumlah tagihan (Rp)">
+            </div>
+            <div class="input-group">
+                <select id="jenis">
+                    <option selected disabled>Pilih Jenis Layanan</option>
+                    <option value="5-10%">Warung Makan</option>
+                    <option value="10-15%">Restoran</option>
+                    <option value="10-15%">Kafe</option>
+                    <option value="5-10%">Kurir Ekspedisi</option>
+                    <option value="10-20%">Ojek Online</option>
+                    <option value="10-20%">Barbershop</option>
+                    <option value="5-10%">Hotel</option>
+                    <option value="5-10%">Parkir valet</option>
+                </select>
+            </div>
+            <div id="tipInfo">
+                <span id="selectedOption">Ket</span>
+            </div>
+            <div class="input-group">
+                <input id="persentaseTip" type="number" placeholder="Persentase Tip (%)">
+            </div>
+            <div class="input-group">
+                <input id="jmlOrang" type="number" min="1" placeholder="Jumlah Orang">
+            </div>
+            <div class="button-container">
+                <button class="btnReset" type="reset">Reset</button>
+                <button class="btnHitung" type="button" onclick="hitungTip()">Hitung</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
