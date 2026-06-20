@@ -58,8 +58,8 @@ input, select{
 }
 
 #selectedOption{
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    
 }
 
 .btnReset{
@@ -101,4 +101,21 @@ input, select{
 
 .btnHitung:active, .btnReset:active{
     transform: scale(0.9);
+}
+
+.calculate-result{
+   
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.result{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+}
+
+#totalAmount{
+    font-weight: bold;
 }

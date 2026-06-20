@@ -11,7 +11,7 @@
         <h1>Kalkulator Tip</h1>
         <form>
             <div class="input-group">
-                <input id="jumlahTagihan" min="1" type="number" placeholder="Masukkan jumlah tagihan (Rp)">
+                <input id="jmlTagihan" min="1" type="number" placeholder="Masukkan jumlah tagihan (Rp)">
             </div>
             <div class="input-group">
                 <select id="jenis">
@@ -40,6 +40,24 @@
                 <button class="btnHitung" type="button" onclick="hitungTip()">Hitung</button>
             </div>
         </form>
+
+        <!-- <div id="hasil">
+
+        </div> -->
+
+        <div class="calculate-result">
+            <p>Tip: <span id="totalAmount">Rp 0</span></p>
+
+            <div class="result">
+                <p>Total Bayar</p>
+                <p id="totalPay">Rp 0</p>
+            </div>
+            <div class="result">
+                <p>Total Per Orang</p>
+                <p id="perPerson">Rp 0</p>
+
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
