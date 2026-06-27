@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>--- Quote of The Day ---</h2>
+        <div id="datetime"></div>
+        <div class="icon">" "</div>
+        <div id="quote">"Two roads diverged in a wood, and I, I took the one less travelled by, and 
+that has made all the difference."</div>
+        <div id="author">- Robert Frost</div>
+        <div class="button">
+            <button onclick="generateQuote()">Generate Quote</button>
+            <button onclick="toggleMusic()" id="musicBtn">Music</button>
+
+        </div>
+        <div class="footer">
+            Have a beautiful day! <span id="emoji">😊</span>
+        </div>
+        <audio id="music" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
