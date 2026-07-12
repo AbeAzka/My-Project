@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Feed Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <nav>
+        <ul id="menu">
+            <li class="logo">
+                <img src="logo.png" height="35" alt="Logo">
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="header">
+        <h1>The Breaking News</h1>
+        <hr>
+        <p id="todayDate">01/01/2026</p>
+        <p id="clock">12:00:00</p>
+    </section>
+    <main id="newsContainer">
+        <!-- News articles will be dynamically inserted here by JavaScript -->
+    </main>
     <script src="script.js"></script> 
 </body>
 </html>
