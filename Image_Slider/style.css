@@ -220,7 +220,7 @@ span{
     z-index:99;
 }
 
-.dots{
+.dot{
     width:15px;
     height:15px;
     border-radius:50%;
@@ -230,7 +230,7 @@ span{
     transition:.4s;
 }
 
-.dots.active{
+.dot.active{
     width:45px;
     border-radius:30px;
     opacity:1;
