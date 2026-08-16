@@ -12,7 +12,16 @@ header{
     width: 100%;
     padding: 20px 50px;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255,230,80, 0.3);
+}
+
+.logo{
+    color: #ff5959;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 nav ul{
@@ -54,6 +63,12 @@ video{
     color: #fff;
 }
 
+.text{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .text h2{
     margin-bottom: 10px;
 
@@ -65,4 +80,25 @@ video{
 
 .text p{
     line-height: 1.5;
+}
+
+#play-btn {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    outline: none;
+}
+
+#play-btn img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.2s ease;
+}
+
+#play-btn img:hover {
+    transform: scale(1.1);
 }
