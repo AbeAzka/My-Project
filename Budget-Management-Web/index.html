@@ -7,9 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Budget Management</h1>
     <div class="wraper">
-        
+        <h1>Budget Management</h1>
+        <div class="sub-container" id="sub-container-income">
+            <div class="card" id="income-section">
+                <h3>Tambah Pemasukan</h3>
+                <div class="input-group">
+                    <input type="text" id="income-source" placeholder="Masukkan sumber pemasukan...">
+                    <input type="number" id="income-amount" placeholder="Masukkan jumlah pemasukan...">
+                    <button id="add-income-btn">Tambah Pemasukan</button> 
+                </div>
+            </div>
+
+            <div class="card" id="expense-section">
+                <h3>Tambah Pengeluaran</h3>
+                <div class="input-group">
+                    <input type="text" id="expense-source" placeholder="Masukkan sumber pengeluaran...">
+                    <input type="number" id="expense-amount" placeholder="Masukkan jumlah pengeluaran...">
+                    <button id="add-expense-btn">Tambah Pengeluaran</button>
+                </div>
+            </div>
+        </div>
+        <div class="list-container">
+            <div class="list-section">
+                <h3>Daftar Pemasukan</h3>
+                <ul id="income-list"></ul>
+            </div>
+            <div class="list-section">
+                <h3>Daftar Pengeluaran</h3>
+                <ul id="expense-list"></ul>
+            </div>
+        </div>
+
+        <div class="summary-container">
+            <div class="summary-box income-box">
+                <p>Total Pemasukan</p>
+                <h3 id="total-income">Rp. 0</h3>
+            </div>
+            <div class="summary-box expense-box">
+                <p>Total Pengeluaran</p>
+                <h3 id="total-expense">Rp. 0</h3>
+            </div>
+            <div class="summary-box balance-box">
+                <p>Saldo</p>
+                <h3 id="balance">Rp. 0</h3>
+            </div>
+        </div>
+        <button class="reset-btn" id="reset-btn">Reset Semua Data</button>
     </div>
 
     <script src="script.js"></script>
