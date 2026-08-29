@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color:aliceblue;
+    background-color:rgb(178, 219, 255);
     flex-direction: column;
     line-height: 1.6;
 }
@@ -79,15 +79,17 @@ button{
 #add-income-btn{
     background-color: green;
     color: white;
+    transition: ease all 0.2s;
 }
 
 
 #add-expense-btn{
     background-color: red;
     color: white;
+    transition: ease all 0.2s;
 }
 
-button:hover{
+#add-expense-btn:hover, #add-income-btn:hover{
     background-color: rgb(5,5,70);
     color: white;
 }
@@ -118,10 +120,12 @@ ul{
 
 li{
     display: flex;
+    background: #d4d5d4;
     justify-content: space-between;
     align-items: center;
     padding: 0.7em 0.5em;
     border-bottom: 1px solid #eee;
+    border-radius: 4px;
     font-size: 0.9em;
 }
 
@@ -136,6 +140,7 @@ li:last-child {
     color: #c0392b; font-weight: bold; 
 }
 
+
 .delete-btn {
     background: #e74c3c;
     color: white;
@@ -144,7 +149,8 @@ li:last-child {
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.8em;
-    margin-left: 8px;
+    margin-left: 10px;
+    width: 20px;
 }
 
 .delete-btn:hover {
@@ -200,7 +206,7 @@ li:last-child {
   font-weight: bold;
   font-size: 0.95em;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: ease all 0.2s;
 }
 
 .reset-btn:hover {
