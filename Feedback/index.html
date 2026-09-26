@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <div class="feedback-card">
+            <h2>Silahkan berikan umpan balik Anda:</h2>
+
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="class-type">Jenis Kelas:</label>
+            <select id="class-type" name="class-type" required>
+                <option value="">Pilih Jenis Kelas</option>
+                <option value="regular">Regular</option>
+                <option value="intensive">Intensive</option>
+            </select>
+
+            <label for="category">Kategori:</label>
+            <select id="category" name="category" required>
+                <option value="">Pilih Kategori</option>
+                <option value="suggestion">Saran</option>
+                <option value="complaint">Keluhan</option>
+                <option value="praise">Pujian</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
