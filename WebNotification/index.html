@@ -11,6 +11,94 @@
         News
         <button>Give Your Feedback</button>
     </header>
+    <main class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1>Stay <br> Informed,<br> Stay ahead</h1>
+            <p class="tagline">Get the latest news <br> and updates delivered to your inbox.</p>
+            <form id="subscribeForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="subscribeMessage"></p>
+        </aside>
+
+        <!-- News Menu-->
+        <section class="news-container">
+            <div class="date-label">FRIDAY</div>
+            <h2 id="currentDate">29-09-2023</h2>
+            <div id="newsList">
+                <article class="news-item">
+                    <h3>What is NASA's Psyche Mission?</h3>
+                    <p>
+                    The Psyche mission represents an ambitious venture
+                    to explore a distinct metallic asteroid positioned
+                    in orbit between Mars and Jupiter.
+                    </p>
+                </article>
+
+                <article class="news-item">
+                    <h3>
+                    Asian Games Medal Tally 2023, Overall Medals Tally
+                    By 28th SEP
+                    </h3>
+                    <p>
+                    The 19th Asian Games were held in Hangzhou, China,
+                    from September 23 to October 8, 2023. A total of
+                    45 Olympic sports and 61 disciplines were contested
+                    by over 11,000 athletes from 45 countries and
+                    territories.
+                    </p>
+                </article>
+                
+                <article class="news-item">
+                    <h3>
+                    'Jhaadu Daan' Initiative Earns Place In India
+                    Book Of Records
+                    </h3>
+                    <p>
+                    An initiative highlighting community participation
+                    and the importance of keeping our surroundings clean.
+                    </p>
+                </article>
+
+                <article class="news-item">
+                    <h3>
+                    Nepal-China Sign 12 Agreements: A Closer Look
+                    at the Visit's Outcome
+                    </h3>
+                    <p>
+                    The agreements were the result of delegation-level
+                    talks between Prime Minister Dahal and Chinese
+                    Premier Li Qiang. The discussions covered
+                    expectations and commitments between both countries.
+                    </p>
+                </article>
+
+                <article class="news-item">
+                    <h3>
+                    India launches satellite to the south pole of moon
+                    </h3>
+                    <p>
+                    ISRO was successful in launching Chandrayaan-3
+                    towards the south pole of the moon. It's a victory
+                    and a proud moment for all the Indians.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Tambah Berita di Footer-->
+    <section class="add-news">
+        <h2>Have some interesting news to share? Add it here!</h2>
+        <form>
+            <input type="text" id="newsTitle" placeholder="Enter news title" required>
+            <textarea id="newsDescription" placeholder="Enter news content" rows="4" required></textarea>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
