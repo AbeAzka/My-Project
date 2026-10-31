@@ -17,7 +17,7 @@
             <h1>Stay <br> Informed,<br> Stay ahead</h1>
             <p class="tagline">Get the latest news <br> and updates delivered to your inbox.</p>
             <form id="subscribeForm">
-                <input type="email" placeholder="Enter your email" required>
+                <input id="emailInput" type="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
             </form>
             <p id="subscribeMessage"></p>
@@ -92,13 +92,30 @@
     <!-- Tambah Berita di Footer-->
     <section class="add-news">
         <h2>Have some interesting news to share? Add it here!</h2>
-        <form>
+        <form id="addNewsForm">
             <input type="text" id="newsTitle" placeholder="Enter news title" required>
             <textarea id="newsDescription" placeholder="Enter news content" rows="4" required></textarea>
             <button type="submit">Add</button>
         </form>
     </section>
 
+    <!-- <main class="main-container">
+        <aside class="sidebar">
+            <h2>
+                Stay <br>Informed, <br>Stay Ahead
+            </h2>
+            <p>
+                Get the latest news and updates delivered to your inbox.
+            </p>
+            <form>
+                <input>
+                <button>Submit</button>
+            </form>
+        </aside>
+
+    </main> -->
+    <!-- NOTIFIKASI DI HALAMAN -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
 </body>
 </html>

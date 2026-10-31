@@ -82,6 +82,8 @@ header button:hover {
     display: flex;
     width: 100%;
     max-width: 280px;
+    gap: 5px;
+    margin-bottom: 10px;
 }
 
 #subscribeForm input{
@@ -141,4 +143,125 @@ header button:hover {
     font-size: 14px;
     color: #555;
     margin-bottom: 10px;
+}
+
+.add-news{
+    width: 60%;
+    margin: 50px auto;
+    background-color: #f8fcf8;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    
+}
+
+.add-news h2{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#addNewsForm{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+#addNewsForm input, textarea{
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#addNewsForm button{
+    width: 100px;
+    padding: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+#addNewsForm button:hover{
+    background-color: #45a049;
+    transform: translateY(-1px);
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    top: 85px;
+    right: 20px;
+    z-index: 1100;
+    width: min(320px, calc(100% - 40px));
+    padding: 15px;
+    background: #252525;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    box-shadow: 0 4px 15px #0004;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: 0.25s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+    header {
+        font-size: 25px;
+        padding: 16px;
+        flex-wrap: wrap;
+    }
+
+    header button {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+        margin: 12px;
+    }
+
+    .sidebar {
+        padding: 22px;
+    }
+
+    .sidebar h1 br,
+    .tagline br {
+        display: none;
+    }
+
+    .tagline {
+        margin-bottom: 20px;
+    }
+
+    #subscribeForm {
+        max-width: 300px;
+    }
+
+    .news-container {
+        max-height: 500px;
+        padding: 18px;
+    }
+
+    .add-news {
+        margin-top: 25px;
+    }
 }
